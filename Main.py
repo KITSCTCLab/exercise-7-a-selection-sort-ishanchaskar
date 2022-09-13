@@ -1,12 +1,11 @@
 from typing import List
 def selectionSort(array, size) -> List[int]:
-    for i in range(size):
+  for i in range(size):
     min=i
     for j in range(i,size):
       if(array[j]<array[i]):
         array[j],array[i] = array[i],array[j]
   return array
-   
 input_data = input()
 data = []
 for item in input_data.split(', '):
@@ -14,4 +13,4 @@ for item in input_data.split(', '):
     data.append(int(item))
   elif item.lstrip("-").isnumeric():
     data.append(int(item))
-print(selectionSort(data, len(data)))dv
+print(selectionSort(data, len(data)))
